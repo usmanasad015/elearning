@@ -1,0 +1,53 @@
+import { Outlet, Link } from "react-router-dom";
+import React from 'react'
+
+const Layout = () => {
+
+    return (
+        <>
+
+           
+
+
+
+            <nav>
+                <ul>
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/aboutus">About Us</Link>
+                    </li>
+                    <li>
+                        <Link to="/courses">Courses</Link>
+                    </li>
+
+                    <li>
+                        <Link to="/downloadapp">Donwload App</Link>
+                    </li>
+                    <li>
+                        <Link to="/privacypolicy">Privacy Policy</Link>
+                    </li>
+                    <li>
+                        <Link to="/events">Events</Link>
+                    </li>
+                    <li>
+                        <Link to="/news">News</Link>
+                    </li>
+
+                    <li>
+                        <Link to="/contact">Contact</Link>
+                    </li>
+
+                </ul>
+            </nav>
+
+
+
+            <Outlet />
+        </>
+    )
+}
+
+
+export default Layout
